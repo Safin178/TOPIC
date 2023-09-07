@@ -17,10 +17,14 @@ class Solution
            }
            int cnt = 0;
            map<string,int>:: iterator it;
-           for(it = mp.begin(); it != mp.end(); it++)
-           {
-               if(it->second == 2)cnt++;
-           }
+        //    for(it = mp.begin(); it != mp.end(); it++)
+        //    {
+        //        if(it->second == 2)cnt++;
+        //    }
+        for(auto u : mp)
+        {
+            if(u.second == 2)cnt++;
+        }
            return cnt;
         }
         
